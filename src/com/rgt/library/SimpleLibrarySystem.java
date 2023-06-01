@@ -18,8 +18,9 @@ public class SimpleLibrarySystem {
 		Books books = new Books();
 
 		boolean flag = false;
+		boolean exit=false;
 		Patron loginUser = new Patron();
-		while (true) {
+		while (!exit) {
 			System.out.println("Library Management System");
 
 			System.out.println("1. Create Account");
@@ -75,6 +76,8 @@ public class SimpleLibrarySystem {
 					System.out.println("2. Borrow Book");
 
 					System.out.println("3. Return Book");
+					
+					System.out.println("4. Logout");
 
 					System.out.print("Choose an option: ");
 
@@ -120,9 +123,14 @@ public class SimpleLibrarySystem {
 					default:
 						System.out.println("Invalid option. Please try again.");
 					}
-				} while (numUsers >= 0); {
+				} while (choice!=4); {
+					
 				break;
 			}
+			case 3:
+				System.out.println("---closed library--");
+           exit=true;
+           break;
 			}
 
 		}
