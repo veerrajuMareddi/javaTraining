@@ -8,7 +8,7 @@ public class Rental {
     private Customer customer;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-    int i=1234;
+    static int i=1234;
     public Rental(Vehicle rentedVehicle, Customer customer, LocalDateTime startTime, LocalDateTime endTime) {
         this.id = "RGT_Rental"+(i++);
         this.rentedVehicle = rentedVehicle;

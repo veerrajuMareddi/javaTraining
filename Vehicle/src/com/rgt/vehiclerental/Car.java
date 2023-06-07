@@ -10,7 +10,9 @@ public class Car extends Vehicle {
         this.openRoof=true;
         this.numberOfSeats = numberOfSeats;
     }
-
+    /**
+	 * specifies the price according to its model
+	 */
 	private static int price(int totalSeats) {
 		
 		return totalSeats>4?100:70;

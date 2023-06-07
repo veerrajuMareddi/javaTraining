@@ -1,4 +1,3 @@
-// RentalCostCalculator.java
 package com.rgt.vehiclerental.inter;
 
 import java.math.BigDecimal;

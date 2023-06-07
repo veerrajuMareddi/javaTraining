@@ -1,4 +1,3 @@
-// VehicleOperations.java
 package com.rgt.vehiclerental.inter;
 
 public interface VehicleOperations {
